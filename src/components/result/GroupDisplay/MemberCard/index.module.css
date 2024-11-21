@@ -1,0 +1,30 @@
+.card {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* デフォルト背景色 */
+    min-width: 100px;
+    min-height: 50px;
+    text-align: center;
+}
+
+.card.section-executive {
+    background-color: #f3e5f5; /* 薄紫 */
+}
+
+.card.section-algorithm {
+    background-color: #e8f5e9; /* 薄緑 */
+}
+
+.card.section-product {
+    background-color: #e3f2fd; /* 薄青 */
+}
+
+.card.section-business {
+    background-color: #fff3e0; /* 薄橙 */
+}
+
+.card.section-corporate {
+    background-color: #eeeeee; /* 薄灰 */
+}

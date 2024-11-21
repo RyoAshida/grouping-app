@@ -1,0 +1,72 @@
+/* アラート全体のコンテナ */
+.alertDisplayContainer {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* 縦方向レイアウト */
+    height: 100%; /* 親要素内で高さを完全に使用 */
+}
+
+/* ステータスバー（固定） */
+.alertStatusBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #f1f1f1;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    flex-shrink: 0; /* 高さを固定 */
+    border-bottom: 1px solid #ccc;
+}
+
+/* ステータスバーのテキスト */
+.alertStatusText {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* アラート詳細（スクロール可能） */
+.alertDetails {
+    flex: 1;
+    overflow-y: auto; /* スクロール可能 */
+    padding: 10px 15px;
+    background-color: #ffffff;
+}
+
+/* アラートアイテム */
+.alertItem {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* level と message の間隔 */
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+/* レベル部分 */
+.alertLevel {
+    font-weight: bold;
+}
+
+/* メッセージ部分 */
+.alertMessage {
+    color: #333333;
+}
+
+/* レベルごとの色分け */
+.alertLevel-info {
+    color: #0078d4; /* 青 */
+}
+
+.alertLevel-warning {
+    color: #ff8c00; /* オレンジ */
+}
+
+.alertLevel-error {
+    color: #d13438; /* 赤 */
+}
